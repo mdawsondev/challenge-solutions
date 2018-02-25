@@ -2,3 +2,5 @@
 
 #### Need Solutions
 * stringsRearrangement.js
+* bishopAndPawn.js
+* buildPalindrome.js
