@@ -1,6 +1,7 @@
 # JavaScript (ES6) Challenges
 
-#### Need Solutions
+#### Needs New Solutions
 * stringsRearrangement.js
 * bishopAndPawn.js
 * buildPalindrome.js
+* lineEncoding.js
