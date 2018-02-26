@@ -1,6 +1,5 @@
 function spiralNumbers(n) {
-  let a = [new Array(n)],
-    b = [];
+  let a = [new Array(n)];
   for (let i = 0; i < n - 1; i++) a.push(a[0].map(e => e)); // Create blank matrix.
 
   let row = col = i = change = 0,
