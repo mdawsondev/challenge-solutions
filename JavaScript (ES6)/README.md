@@ -5,3 +5,4 @@
 * bishopAndPawn.js
 * buildPalindrome.js
 * lineEncoding.js
+* sudoku.js
