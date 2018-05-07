@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# CodeFights Solutions
+# Code Challenge Solutions
 
-This repo houses my custom solutions to the CodeFights coding challenges; answers are guaranteed to pass the full range of tests at the time of their submission.
-
-Each challenge is titled by name and sorted by language.
-=======
-# LeetCode Solutions
-
-This is my storage repo for my LeetCode coding challenge solutions. You're welcome to use my answers however you'd like!
->>>>>>> leetcode-solutions/master
+This repository houses solutions to various coding-challenge sites. They were initally kept within their own repos, but that seemed excessive and messy so I decided to merge them together. The solutions here are my personal answers to the questions across different sites and you're welcome to use them in any way you see fit.
