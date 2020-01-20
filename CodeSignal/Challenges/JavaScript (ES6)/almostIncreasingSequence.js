@@ -1,10 +1,15 @@
-almostIncreasingSequence = a => {
-  let c = 0;
-  for(let i = 0; i < a.length; i++) {
-    if (a[i] <= a[i-1]) {
-        c++;
-        if (c > 1 || (a[i] <= a[i-2] && a[i+1] <= a[i-1])) return false;
+const almostIncreasingSequence = (arr) => {
+  for (let i = 0, errors = 0; i < arr.length; i++) {
+    const cur = arr[i];
+    const next = arr[i+1];
+    const prev = arr[i-1];
+    if (cur >= next) {
+      const start = next <= prev ? i + 1 : i;
+      arr.splice(start, 1);
+      errors += 1;
+      i = -1;
     }
+    if (errors === 2) return false;
   }
   return true;
 }
