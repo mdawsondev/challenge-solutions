@@ -1,10 +1,15 @@
-const matrixElementsSum = (matrix: number[][]): number => {
-  console.log(matrix);
-  return 0;
+const almostIncreasingSequence = (arr: number[]) => {
+  for (let i = 0, errors = 0; i < arr.length; i++) {
+    const cur = arr[i];
+    const next = arr[i+1];
+    const prev = arr[i-1];
+    if (cur >= next) {
+      const start = next <= prev ? i + 1 : i;
+      arr.splice(start, 1);
+      errors += 1;
+      i = -1;
+    }
+    if (errors === 2) return false;
+  }
+  return true;
 }
-
-const x = matrixElementsSum([[1, 1, 1, 0], 
-  [0, 5, 0, 1], 
-  [2, 1, 3, 10]])
-
-console.log(x)
