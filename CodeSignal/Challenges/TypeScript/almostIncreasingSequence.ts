@@ -1,4 +1,4 @@
-const almostIncreasingSequence = (arr: number[]) => {
+const almostIncreasingSequence = (arr: number[]): boolean => {
   for (let i = 0, errors = 0; i < arr.length; i++) {
     const cur = arr[i];
     const next = arr[i+1];
