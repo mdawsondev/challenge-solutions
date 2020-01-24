@@ -1,0 +1,1 @@
+const shapeArea = (n: number): number => n**2 + (n-1)**2;
